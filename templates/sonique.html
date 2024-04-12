@@ -142,7 +142,7 @@
 								</div>
 
 								<div>
-									<p style="font-size:15px"><b>Tags: Drums, 80 BPM</b></p>
+									<p style="font-size:15px"><b>Tags:</b> Drums, 80 BPM</p>
 									<audio controls>
 										<source src="../static/videos/output2.wav" type="video/mp4">
 										Your browser does not support the video tag.
@@ -184,7 +184,7 @@
 						
 								</li>
 								<li>
-									<b>Conditional Audio Generation Stage</b>: Taking tags and video duration extracted from last stage will be pass into the conditioner under
+									<b>Conditional Audio Generation Stage</b>: The tags and video duration extracted from last stage will be pass into the conditioner under
 									the diffusion model adapted from <a style="color:#ffffff" href="https://github.com/Stability-AI/stable-audio-tools">Stable Audio</a>. 
 									The system utilizes a Diffusion U-Net, which takes a noise input and transforms it through a series of
 									stages conditioned on these tags and timing cues, ultimately passing it through a VAE Decoder.
