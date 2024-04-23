@@ -29,11 +29,42 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+.audio-item {
+		flex: 1 1 250px; 
+		margin: 10px; 
+		box-sizing: border-box; 
+	  }
+	
+
+	
+@media (max-width: 600px) {
+		.audio-item {
+		  min-width: 100%; 
+		}
+	  }
+
+.video-item {
+		flex: 1;
+		min-width: 250px; 
+		margin: 10px; 
+	  }
+	  
+.video-item video {
+		width: 100%; 
+		height: auto; 
+	  }
+	
+@media (max-width: 600px) {
+		.video-item {
+		  min-width: 100%; 
+		}
+}
+
 .youtubeVid {
     position: relative;
     width: 100%;
     height: 0;
-    padding-bottom: 56.25%; /* for 16:9 aspect ratio change value as per your requirement */
+    padding-bottom: 56.25%; 
     overflow: hidden;
     border-radius: 5px;
     margin-bottom: 50px;

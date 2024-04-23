@@ -62,12 +62,13 @@
 								<h1 style="margin: 0;">SONIQUE</h1>
 								<div style="display: flex; gap: 0.5rem; margin-left: 20px; margin-top: 5px;">
 									<a href="https://github.com/zxxwxyyy/sonique"><img src="https://img.shields.io/badge/Visit-GitHub-blueviolet" alt="Visit Github"></a>
-									<a href=""><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Demo-blue" alt="Hugging Face Demo"></a>
+									<a href=''><img src='https://img.shields.io/badge/Thesis-Paper-pink'></a>
+									<!-- <a href=""><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-Demo-blue" alt="Hugging Face Demo"></a> -->
 								</div>
 							</div>
 							<p style="font-size:20px; margin-bottom:20px; margin-top: 10px;"><b>Video to Music Generation:</b></p>
-							<div style="display: flex; justify-content: space-around; align-items: center;">
-								<div>
+							<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+								<div class="video-item">
 									<p style="font-size:15px"><b>Demo 1: Transition Scene from <a style="color:#ffffff" href="https://www.imdb.com/title/tt0903747/">Breaking Bad</a></b></p>
 									<video width="320" height="180" controls>
 										<source src="../static/videos/best_demo_v_1.mp4" type="video/mp4">
@@ -75,7 +76,7 @@
 									</video>
 								</div>
 							
-								<div>
+								<div class="video-item">
 									<p style="font-size:15px"><b>Demo 2: Car Chase Scene from Movie <a style="color:#ffffff" href="https://www.imdb.com/title/tt6654210/">Infinite(2021)</a></b></p>
 									<video width="320" height="180" controls>
 										<source src="../static/videos/best_demo_v_2.mp4" type="video/mp4">
@@ -86,7 +87,7 @@
 							</div>
 
 							<div style="display: flex; justify-content: space-around; align-items: center;">
-								<div>
+								<div class="video-item">
 									<p style="font-size:15px"><b>Demo 3: Transition Scene from <a style="color:#ffffff" href="https://www.imdb.com/title/tt0108778/">Friends</a></b></p>
 									<video width="320" height="180" controls>
 										<source src="../static/videos/best_demo_v_3.mp4" type="video/mp4">
@@ -94,8 +95,8 @@
 									</video>
 								</div>
 							
-								<div>
-									<p style="font-size:15px"><b>Demo 4: Vlog Scene from Vloggers <a style="color:#ffffff" href="https://www.youtube.com/@leiandjosh1646">Lei and Josh</a></b></p>
+								<div class="video-item">
+									<p style="font-size:15px"><b>Demo 4: Landscape Scene from Vloggers <a style="color:#ffffff" href="https://www.youtube.com/@leiandjosh1646">Lei and Josh</a></b></p>
 									<video width="320" height="180" controls>
 										<source src="../static/videos/best_demo_v_4.mp4" type="video/mp4">
 										Your browser does not support the video tag.
@@ -105,15 +106,15 @@
 							</div>
 
 							<div style="display: flex; justify-content: space-around; align-items: center;">
-								<div>
+								<!-- <div class="video-item">
 									<p style="font-size:15px"><b>Demo 5: Transition Scene from <a style="color:#ffffff" href="https://www.imdb.com/title/tt0903747/">Breaking Bad</a></b></p>
 									<video width="320" height="180" controls>
 										<source src="../static/videos/best_demo_v_5.mp4" type="video/mp4">
 										Your browser does not support the video tag.
 									</video>
-								</div>
+								</div> -->
 							
-								<div>
+								<div class="video-item">
 									<p style="font-size:15px"><b>Demo 6: Campaign Scene from <a style="color:#ffffff" href="https://www.youtube.com/watch?v=H5zSHFBjohE">Balenciaga 2022</a></b></p>
 									<video width="320" height="180" controls>
 										<source src="../static/videos/best_demo_v_6.mp4" type="video/mp4">
@@ -121,30 +122,49 @@
 									</video>
 								</div>
 								
+							<!-- </div>
+
+							<div style="display: flex; justify-content: space-around; align-items: center;">
+								<div class="video-item">
+									<p style="font-size:15px"><b>Demo 7: Vlog Opening Scene from <a style="color:#ffffff" href="https://www.youtube.com/watch?v=EodRBU-HVEI&t=4s&ab_channel=JuanMarcel%26Rhylan">Juan Marcel & Rhylan</a></b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/best_demo_v_8.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div> -->
+							
+								<div class="video-item">
+									<p style="font-size:15px"><b>Demo 8: Cartoon Scene from <a style="color:#ffffff" href="https://www.youtube.com/watch?v=kfJHLMKXiyY&ab_channel=Pigeonification">Zootopia</a></b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/best_demo_v_9.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+								
 							</div>
 							
 							<p style="font-size:20px; margin-bottom:20px; margin-top: 10px;"><b>Text to Music Generation:</b></p>
-							<div style="display: flex; justify-content: space-around; align-items: center;">
-								<div>
+							<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+								<div class="audio-item">
 									<p style="font-size:15px"><b>Tags:</b> Guitar, Drums, Bass, Rock, 130 BPM</p>
 									<audio controls>
-										<source src="../static/videos/output.wav" type="video/mp4">
+										<source src="../static/videos/output.wav" type="audio/wav">
 										Your browser does not support the video tag.
 									</audio>
 								</div>
 							
-								<div>
+								<div class="audio-item">
 									<p style="font-size:15px"><b>Tags:</b> Piano, Classical, Ambient, Slow, 80 BPM</p>
 									<audio controls>
-										<source src="../static/videos/output1.wav" type="video/mp4">
+										<source src="../static/videos/output1.wav" type="audio/wav">
 										Your browser does not support the video tag.
 									</audio>
 								</div>
 
-								<div>
+								<div class="audio-item">
 									<p style="font-size:15px"><b>Tags:</b> Drums, 80 BPM</p>
 									<audio controls>
-										<source src="../static/videos/output2.wav" type="video/mp4">
+										<source src="../static/videos/output2.wav" type="audio/wav">
 										Your browser does not support the video tag.
 									</audio>
 								</div>
@@ -186,7 +206,7 @@
 								<li>
 									<b>Conditional Audio Generation Stage</b>: The tags and video duration extracted from last stage will be pass into the conditioner under
 									the diffusion model adapted from <a style="color:#ffffff" href="https://github.com/Stability-AI/stable-audio-tools">Stable Audio</a>. 
-									The system utilizes a Diffusion U-Net, which takes a noise input and transforms it through a series of
+									The system utilizes a Diffusion U-Net, which takes a encoded noise input and transforms it through a series of
 									stages conditioned on these tags and timing cues, ultimately passing it through a VAE Decoder.
 									 This results in high-quality, contextually aligned audio output that harmoniously complements
 									  the video narrative in both mood and thematic elements.
@@ -194,7 +214,15 @@
 							</ol>
 							
 							<p style="font-size:30px; margin-bottom:20px; margin-top: 20px;"><b>Evaluation:</b></p>
-							<p>In progress</p>
+							<img src="../static/images/evaluation_res.png"  alt="" style="border-radius: 5px;display:block; width:auto; margin-bottom:50px; margin-left:auto; margin-right:auto"/>
+							<p>The evaluation process involes a group of 38 people with the backgrounds in video editing and music technology.
+								They watched 7 <a style="color:#ffffff" href="https://forms.gle/88zp5Vmn4FtQ9Wrj6">generated demos</a> and rated from 1 - 5.
+								Overall, 75% of participants rate the generated audio aligns with the video scenes,
+								and many rates as perfectly related. The result showcases SONIQUE's capability to create audio that aligns with video content
+								across various scenarios, including transition and action scenes. However, still 25% of the evaluation suggests the results are 
+								disconnected. The model fails to capture the nuanced moods and themes that certain scenes such as 
+								comedic scenes from <i>Friends</i>. This showcases rooms for improvement for the model's emotional and thematic alighment with the video content. 
+								
 						</div>
 					</div>
 
