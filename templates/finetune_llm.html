@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+		<title>Fine-Tune LLM for SONIQUE</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../static/assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../static/assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="../index.html">Home</a></li>
+							<li><a href="sonique.html">SONIQUE - Efficient Video BGM Generation</a></li>
+							<li><a href="https://github.com/zxxwxyyy/VAHA">VAHA - Visual Artwork for Human Affection</a></li>
+							<li><a href="https://github.com/zxxwxyyy/Music-Player-With-Motion-Control">Music Player With Motion Control</a></li>
+							<li><a href="not_your_traditional_therapy.html">Not Your Traditional Therapy</a></li>
+							<li><a href="https://github.com/zxxwxyyy/catinder">Catinder</a></li>
+							<li><a href="https://github.com/zxxwxyyy/Deep-learning-playground">Deep Learning Playground</a></li>
+							<li><a href="ux_research_370jay.html">UX Research 370 Jay St Lobby Design</a></li>
+							<!-- <li><a href="https://lzhang20179.wixsite.com/website/f-studio-vr-ar-exhitbition">F-Studio AR/VR Exhitbition</a></li>
+							<li><a href="https://lzhang20179.wixsite.com/website/kozaburo-aunn-invitation">Kozaburo aUnn AR Invitation</a></li> -->
+
+						</ul>
+						<h2>About</h2>
+						<ul>
+							<li><a href="aboutme.html">About Me</a></li>
+							<li><a href="https://lzhang20179.wixsite.com/website/work">More Work</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
+								<h1 style="margin: 0;">Fine-tune LLM for SONIQUE</h1>
+							</div>
+
+							<a href="https://github.com/zxxwxyyy/sonique"><img src="https://img.shields.io/badge/Visit-GitHub-blueviolet" alt="Visit Github"></a>
+
+							<p>Fine-tuning a Large Language Model (LLM) on the caption to 
+								tags stage may enhance the performance of <a href="./sonique.html">SONIQUE</a>. 
+								To achieve this, I conducted experiments on fine-tuning the 
+								mistral-7b model using paired video descriptions and audio tags. 
+							</p>
+
+							<p style="font-size:20px; margin-bottom:20px; margin-top: 10px;"></p>
+							<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+								<div class="video-item">
+									<p style="font-size:15px"><b>Mistral-7B:</b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/best_demo_v_9.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							
+								<div class="video-item">
+									<p style="font-size:15px"><b>Mistral-7B Fine-tuned:</b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/ft_demo_1.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+								
+							</div>
+
+							<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+								<div class="video-item">
+									<p style="font-size:15px"><b>Mistral-7B:</b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/best_demo_v_4.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							
+								<div class="video-item">
+									<p style="font-size:15px"><b>Mistral-7B Fine-tuned:</b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/ft_demo_2.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+								
+							</div>
+
+							<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
+
+								<div class="video-item">
+									<p style="font-size:15px"><b>Mistral-7B: </b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/best_demo_v_6.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							
+								<div class="video-item">
+									<p style="font-size:15px"><b>Mistral-7B Fine-tuned:</b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/ft_demo_3.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+								
+							</div>
+							<p style="font-size:30px; margin-bottom:20px; margin-top: 20px;"><b>Conclusion:</b></p>
+							<p>The fine-tuned model's effectiveness appears to be constrained by the
+								nature of the training data, leading to less variety in the generated
+								tags. Previously, the LLM exhibited a high degree 
+								of creativity in generating diverse tags for music generation, 
+								offering a broad range of tags that enriched generation process.
+								 However, after fine-tuning, the generated tags
+								have become more fixed, with a noticeable preference for fast-tempo 
+								music, rock, and disco genres.
+							</p>
+							<p>
+								To investigate the cause of this issue, 
+								I plotted the top 10 most frequent tags from the 
+								paired video description and audio dataset. 
+								Here is the chart showing these tags:
+							</p>
+							<img class="image main" src="../static/images/data.png" alt="" style="display:block; width:80%; margin-bottom:50px; margin-left:auto; margin-right:auto"/>
+							<p>
+								The plot confirms that the dataset used for fine-tuning heavily 
+								influences the model's output, resulting in a narrow range of tags 
+								mainly associated with high-energy music genres like rock 
+								and disco. This suggests that the paired dataset's characteristics 
+								lead to the model producing repetitive and genre-specific tags, 
+								rather than the diverse range previously generated.
+							</p>
+							
+							<ol type="1">
+								<li><b>Dataset Composition:</b> The lack of the diversity in the fine-tuned
+									dataset causes the limited range of generated tags in the caption to tags stage.
+									Having a large scale, diversity dataset could help improve the performance and 
+									the creativity of the model.Incorporating a wide array of video descriptions
+									 and audio files representing various tempos, genres, and moods is crucial.
+								</li>
+								<li><b>Overfitting: </b>Due to the limited number of paired samples (only 3000 pairs), 
+									the model may be overfitting during the fine-tuning process. This overfitting results in 
+									the model generating repetitive and less varied tags. </li>
+							</ol>
+							<p>Even though the result not being as expected, the experience has been 
+								valuable in understanding the impact of dataset diversity and 
+								overfitting on model performance. 
+							</p>
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+						
+							<section>
+								<h2></h2>
+								<ul class="icons">
+									<li><a href="https://github.com/zxxwxyyy" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://www.linkedin.com/in/liqian-zhang-0572b91a7/" class="icon brands style2 fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="mailto:lzhang2017@gmail.com" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+<!--							<ul class="copyright">-->
+<!--								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>-->
+<!--							</ul>-->
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="../static/assets/js/jquery.min.js"></script>
+			<script src="../static/assets/js/browser.min.js"></script>
+			<script src="../static/assets/js/breakpoints.min.js"></script>
+			<script src="../static/assets/js/util.js"></script>
+			<script src="../static/assets/js/main.js"></script>
+
+	</body>
+</html>
