@@ -7,7 +7,7 @@
 <html>
 	<head>
 		<link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
-		<title>SONIQUE</title>
+		<title>SONIQUE: Video Background Music Generation Using Unpaired Audio-Visual Data</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../static/assets/css/main.css" />
@@ -37,7 +37,7 @@
 						<h2>Menu</h2>
 						<ul>
 							<li><a href="../index.html">Home</a></li>
-							<li><a href="sonique.html">SONIQUE - Efficient Video BGM Generation</a></li>
+							<li><a href="sonique.html">SONIQUE - Video Background Music Generation Using Unpaired Audio-Visual Data</a></li>
 							<li><a href="https://github.com/zxxwxyyy/VAHA">VAHA - Visual Artwork for Human Affection</a></li>
 							<li><a href="https://github.com/zxxwxyyy/Music-Player-With-Motion-Control">Music Player With Motion Control</a></li>
 							<li><a href="not_your_traditional_therapy.html">Not Your Traditional Therapy</a></li>
@@ -59,12 +59,29 @@
 					<div id="main">
 						<div class="inner">
 							<div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
-								<h1 style="margin: 0;">SONIQUE</h1>
-								
+								<h1 style="margin: 0; letter-spacing: 1px">SONIQUE: Video Background Music Generation Using Unpaired Audio-Visual Data</h1>								
 							</div>
 							<a href="https://github.com/zxxwxyyy/sonique"><img src="https://img.shields.io/badge/Visit-GitHub-blueviolet" alt="Visit Github"></a>
-							<a href=''><img src='https://img.shields.io/badge/Thesis-Paper-pink'></a>
-							<p style="font-size:20px; margin-bottom:20px; margin-top: 20px;"><b>Video to Music Generation:</b></p>
+							<a href=''><img src='https://img.shields.io/badge/Paper-arXiv-red'></a>
+							
+							
+							<p style="font-size:30px; margin-bottom:20px; margin-top: 20px;"><b>Abstract:</b></p>
+							<p>We present SONIQUE, a model for generating
+								background music tailored to video content. Unlike traditional
+								video-to-music generation approaches, which rely heavily on
+								paired audio-visual datasets, SONIQUE leverages unpaired data,
+								combining royalty-free music and independent video sources. By
+								utilizing large language models (LLMs) for video understanding
+								and converting visual descriptions into musical tags, alongside
+								a U-Net-based conditional diffusion model, SONIQUE enables
+								customizable music generation. Users can control specific aspects
+								of the music, such as instruments, genres, tempo, and melodies,
+								ensuring the generated output fits their creative vision. 
+
+							</p>
+							<img class="image main" src="../static/images/sonique1.png" alt="" style="display:block; margin-bottom:50px; margin-left:auto; margin-right:auto"/>
+							
+							<p style="font-size:20px; margin-bottom:20px; margin-top: 20px;"><b>Video to Music Generation (automated without tuning):</b></p>
 							<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
 								<div class="video-item">
 									<p style="font-size:15px"><b>Demo 1: Transition Scene from <a style="color:#ffffff" href="https://www.imdb.com/title/tt0903747/">Breaking Bad</a></b></p>
@@ -141,7 +158,96 @@
 								
 							</div>
 							
-							<p style="font-size:20px; margin-bottom:20px; margin-top: 10px;"><b>Text to Music Generation:</b></p>
+							<p style="font-size:20px; margin-bottom:20px; margin-top: 10px;"><b>Video to Music Generation (with tuning)</b></p>
+							<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;"></div>
+						
+							<div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start;">
+								<div style="flex-basis: 100%;">
+									<p style="font-size:15px; margin-bottom: 20px;"><b>Demo 1: Cartoon Scene from <a style="color:#ffffff;" href="https://www.youtube.com/watch?v=kfJHLMKXiyY&ab_channel=Pigeonification">Zootopia</a></b></p>
+								</div>
+							
+								<div class="video-item" style="margin-right: 20px;">
+									<p style="font-size:15px; margin: 0 0 5px 0;"><b>Original</b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/1.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							
+								<div class="video-item">
+									<p style="font-size:15px;margin: 0 0 5px 0;"><b>Tuned</b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/1-tuned.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							
+								<div style="flex-basis: 100%; margin-top: 10px;">
+									<p style="font-size: 15px;"><b>Original tags:</b> Ambient, Electric Piano, Lo-fi, Melancholic, Nostalgic, Synthwave, 120 BPM<br />
+									<b>Added Tag:</b> 60 BPM <br />
+									<b>Negative Prompt:</b> 120 BPM
+								</p> 
+								</div>
+								
+							</div>
+
+
+							<div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start;">
+								<div style="flex-basis: 100%;">
+									<p style="font-size:15px; margin-bottom: 20px;"><b>Demo 2: Car Chase Scene from Movie <a style="color:#ffffff" href="https://www.imdb.com/title/tt6654210/">Infinite(2021)</a></b></p>
+								</div>
+							
+								<div class="video-item" style="margin-right: 20px;">
+									<p style="font-size:15px; margin: 0 0 5px 0;"><b>Original</b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/2.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							
+								<div class="video-item">
+									<p style="font-size:15px;margin: 0 0 5px 0;"><b>Tuned</b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/2-tuned.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							
+								<div style="flex-basis: 100%; margin-top: 10px;">
+									<p style="font-size: 15px;"><b>Original tags:</b> Dark, Jazz, Melancholic, Noir, Piano, Slow, 80 BPM<br />
+										<b>Added Tag:</b> Drums <br />
+										<b>Negative Prompt:</b> Piano
+									</p> 
+								</div>
+							</div><div style="display: flex; flex-wrap: wrap; justify-content: flex-start; align-items: flex-start;">
+								<div style="flex-basis: 100%;">
+									<p style="font-size:15px; margin-bottom: 20px;"><b>Demo 3: Campaign Scene from <a style="color:#ffffff" href="https://www.youtube.com/watch?v=H5zSHFBjohE">Balenciaga 2022</a></b></p>
+								</div>
+							
+								<div class="video-item" style="margin-right: 20px;">
+									<p style="font-size:15px; margin: 0 0 5px 0;"><b>Original</b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/3.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							
+								<div class="video-item">
+									<p style="font-size:15px;margin: 0 0 5px 0;"><b>Tuned</b></p>
+									<video width="320" height="180" controls>
+										<source src="../static/videos/3-tuned.mp4" type="video/mp4">
+										Your browser does not support the video tag.
+									</video>
+								</div>
+							
+								<div style="flex-basis: 100%; margin-top: 10px;">
+									<p style="font-size: 15px;"><b>Original tags:</b> Ambient, Introspective, Melancholic, Minor Key, Nocturne, Piano Ballad, Slow, Solo Piano, (60-80BPM)<br />
+										<b>Added Tag:</b>140 BPM<br />
+										<b>Negative Prompt:</b> Slow, (60-80BPM)
+									</p> 
+								</div>
+							</div>
+							<!-- <p style="font-size:20px; margin-bottom:20px; margin-top: 10px;"><b>Text to Music Generation:</b></p>
 							<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">
 								<div class="audio-item">
 									<p style="font-size:15px"><b>Tags:</b> Guitar, Drums, Bass, Rock, 130 BPM</p>
@@ -167,11 +273,11 @@
 									</audio>
 								</div>
 								
-							</div>
+							</div> -->
 
 							
 							
-							<p style="font-size:30px; margin-bottom:20px; margin-top: 20px;"><b>Abstract:</b></p>
+							<!-- <p style="font-size:30px; margin-bottom:20px; margin-top: 20px;"><b>Abstract:</b></p>
 							<p>In recent years, we’ve seen rapid advancements of LLM and Image Generation models. However, 
 							few of the research dive into Conditional Music Generation, specifically for video. Due to the limitation of 
 							the available video-audio pairs dataset and computation limitation, video to audio generation has always been 
@@ -186,8 +292,8 @@
 							pairs dataset needed for the specific tasks and the multi-model is capable to run on consumer level devices. 
 
 							</p>
-							<img class="image main" src="../static/images/sonique1.png" alt="" style="display:block; width=50%; margin-bottom:50px; margin-left:auto; margin-right:auto"/>
-							<p style="font-size:20px; margin-bottom:20px; margin-top: 20px;">The system is splitted into several stages:</p>
+							<img class="image main" src="../static/images/sonique1.png" alt="" style="display:block; width=50%; margin-bottom:50px; margin-left:auto; margin-right:auto"/> -->
+							<!-- <p style="font-size:20px; margin-bottom:20px; margin-top: 20px;">The system is splitted into several stages:</p>
 							<ol>
 								<li>
 								<b>Video Understanding Stage</b>: Differs from traditional methods that extract rhythmic features from videos,
@@ -220,7 +326,7 @@
 								across various scenarios, including transition and action scenes. However, still 25% of the evaluation suggests the results are 
 								disconnected. The model fails to capture the nuanced moods and certain scenes such as 
 								scenes from comedic TV series <i>Friends</i>. This showcases rooms for improvement for the model's emotional and thematic alighment with the video content. 
-								
+								 -->
 						</div>
 					</div>
 
